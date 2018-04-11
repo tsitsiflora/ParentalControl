@@ -29,22 +29,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--Horizontal Tab-->
         <div id="parentHorizontalTab_agile">
             <ul class="resp-tabs-list hor_1">
-                <li>SignUp</li>
+                <li>LogIn</li>
             </ul>
-
-                <div class="agile_its_registration">
-                   <form class="agile_form" method="POST" action="/signIn" >
+            <div class="resp-tabs-container hor_1">
+               <div class="w3_agile_login">
+                 <form class="agile_form" method="POST" action="/login">
                        {{ form.csrf_token }}
                        {{ render_field(form.name) }}
-                       {{ render_field(form.phone_no) }}
-                       {{ render_field(form.email) }}
                        {{ render_field(form.password) }}
-                       {{ render_field(form.confirm) }}
+					  <input type="submit" value="LogIn" class="agileinfo" />
+					</form>
+					 <div class="login_w3ls">
+				        <a href="#">Forgot Password</a>
+					 </div>
+                    
+                </div>
 
-					   <input type="submit" value="SignUp" class=" col-20 col-md-40" />
-					   <!--<input type="reset" value="Reset" />-->
-					</form> 
-				</div>
             </div>
         </div>
 		 <!-- //Horizontal Tab -->
@@ -71,23 +71,7 @@ $(document).ready(function() {
 	});
 });
 </script>
-<script type="text/javascript">
-		window.onload = function () {
-			document.getElementById("password1").onchange = validatePassword;
-			document.getElementById("password2").onchange = validatePassword;
-		}
-		function validatePassword(){
-			var pass2=document.getElementById("password2").value;
-			var pass1=document.getElementById("password1").value;
-			if(pass1!=pass2)
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-			else
-				document.getElementById("password2").setCustomValidity('');	 
-				//empty string means no validation error
-		}
 
-</script>
-<!--//tabs-->
 </body>
 </html>
 
