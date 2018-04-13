@@ -7,9 +7,13 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/signIn')
+@app.route('/signUp')
+def signUp():
+    return render_template('signUp.html')
+
+@app.route('/login')
 def login():
-    return render_template('signIn.html')
+    return render_template('login.html')
 
 @app.route('/dashboard')
 def dashboard():
