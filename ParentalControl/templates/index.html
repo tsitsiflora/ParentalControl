@@ -51,10 +51,10 @@
           </div>
           <div class="navbar-items">
 
-              <a class="col-md-6" href="#contactus">ContactUs</a>
+              
               <a class="col-md-8" href="#customersupport">Customer Support</a>
               <a class="col-md-10" href="#terms andconditions">Terms and Conditions</a>
-              <button class="btn btn-primary"><a class="col-md-12" href="{{ url_for('signIn.html') }}">Sign up!</a></button>
+              <button class="btn btn-primary"><a class="col-md-12" href="{{ url_for('login') }}">Login!</a></button>
           </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
@@ -218,7 +218,7 @@
                   <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
                 </div>
                 <div class="col-12 col-md-3">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary"><a href="{{ url_for('signIn.html') }}">Sign up!</a></button>
+                  <button type="submit" class="btn btn-block btn-lg btn-primary"><a href="{{  url_for('login') }}">Sign up!</a></button>
                 </div>
               </div>
             </form>

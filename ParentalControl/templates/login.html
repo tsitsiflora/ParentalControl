@@ -34,7 +34,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="resp-tabs-container hor_1">
                <div class="w3_agile_login">
                  <form class="agile_form" method="POST" action="/login">
-                       {{ form.csrf_token }}
+                      <!-- {{ form.csrf_token }}-->
                        {{ render_field(form.name) }}
                        {{ render_field(form.password) }}
 					  <input type="submit" value="LogIn" class="agileinfo" />

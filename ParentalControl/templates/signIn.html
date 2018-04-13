@@ -34,7 +34,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                 <div class="agile_its_registration">
                    <form class="agile_form" method="POST" action="/signIn" >
-                       {{ form.csrf_token }}
+                       <!--{{ form.csrf_token }}-->
                        {{ render_field(form.name) }}
                        {{ render_field(form.phone_no) }}
                        {{ render_field(form.email) }}
