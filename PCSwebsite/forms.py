@@ -18,6 +18,11 @@ class SignUpForm(FlaskForm):
     password = StringField('password', validators=[DataRequired()])
     confirmpassword = StringField('password', validators=[DataRequired()])
 
+class ChildDetails(FlaskForm):
+    name = StringField('name', validators=[DataRequired()])
+    age = StringField('age', validators=[DataRequired()])
+
+
 
 
 

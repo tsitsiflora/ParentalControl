@@ -7,8 +7,8 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/signIn')
-def signIn():
+@app.route('/signUp')
+def signUp():
     return render_template('signUp.html')
 
 @app.route('/login')
