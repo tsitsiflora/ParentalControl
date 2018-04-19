@@ -21,11 +21,14 @@ class SignUpForm(FlaskForm):
 class ChildDetails(FlaskForm):
     name = StringField('name', validators=[DataRequired()])
     age = StringField('age', validators=[DataRequired()])
+    gender = StringField('gender', validators=[DataRequired()])
+    interests = StringField('interests', validators=[DataRequired()])
+
 
 class Settings(FlaskForm):
     keywords = StringField('keywords', validators=[DataRequired()])
     websites = StringField('websites', validators=[DataRequired()])
-    
+
 
 
 
