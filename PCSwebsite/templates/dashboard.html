@@ -11,10 +11,10 @@
     <title>Child Guard - Dashboard</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="static\startbootstrap-shop-item-gh-pages (1)\startbootstrap-shop-item-gh-pages\vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{url_for('static',filename='startbootstrap-shop-item-gh-pages/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="static\startbootstrap-shop-item-gh-pages (1)\startbootstrap-shop-item-gh-pages\css/shop-item.css" rel="stylesheet">
+    <link href="{{url_for('static',filename='startbootstrap-shop-item-gh-pages/css/shop-item.css')}}" rel="stylesheet">
 
   </head>
 
@@ -31,7 +31,7 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="{{ url_for('index') }}">Home
-                <span class="sr-only">(current)</span>
+            
               </a>
             </li>
             <!--<li class="nav-item">
@@ -54,11 +54,14 @@
       <div class="row">
 
         <div class="col-lg-3">
-          <h1 class="my-4">Settings</h1>
+          
           <div class="list-group">
-            <a href="#" class="list-group-item active">Keywords</a>
+            
+            <a href="#" class="list-group-item">Child Details</a>
+            <a href="#" class="list-group-item">Keywords</a>
             <a href="#" class="list-group-item">Blocked sites</a>
             <a href="#" class="list-group-item">View logs</a>
+            <a href="#" class="list-group-item">Configure Settings</a>
           </div>
         </div>
         <!-- /.col-lg-3 -->
@@ -66,30 +69,41 @@
         <div class="col-lg-9">
 
           <div class="card mt-4">
-            <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
+            <img class="card-img-top img-fluid" src="static/images/image4.jpg" alt="">
             <div class="card-body">
-              <h3 class="card-title">Product Name</h3>
-              <h4>$24.99</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
-              <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-              4.0 stars
+             <!-- <h3 class="card-title">Product Name</h3>
+              <h4>$24.99</h4>-->
+              <p class="card-text">Thank you for purchasing child Guard. We guarantee safety to your child at all costs!</p>
+             <p><a href="#">You can download the application here</a></p>
             </div>
           </div>
           <!-- /.card -->
 
           <div class="card card-outline-secondary my-4">
             <div class="card-header">
-              Product Reviews
+              
+              <h4>Family Options</h4>
+              <p>Get what you need to simplify your famil's digital life</p>
             </div>
             <div class="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
               <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+              <h3>Help Protect your kids online</h3>
+              <p>Choose which websites your children can visit and block all the harmful and inappropriate content that are exposed to them</p>
+              
               <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+              <h3>Set Good Screen Time Habits</h3>
+              <p>Choose when and how much time your kids can use their devices.</p>
+             
+              <hr>
+              <h3>keep Track of your child's digital life</h3>
+              <p>Get daily logs of your child's activity during the day, both online and offline.</p>
+              
+              <hr>
+              <h3>Let your kids buy appropriate apps and games</h3>
+              <p>Configure settings to put restrictions on the games and applications that children may view or download.</p>
+              <hr>
+              <h3>Get alerts when your child is in danger</h3>
+              <p>Child Guard will send alerts to you when it suspects your child is in some kind of danger that requires immediate attention.</p>
               <hr>
               <a href="#" class="btn btn-success">Leave a Review</a>
             </div>
@@ -107,14 +121,14 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">All Rights Reserved &copy; Child Guuard 2018</p>
       </div>
       <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="C:\Users\tsitsi\Desktop\Development\ParentalControl\ParentalControl\static\startbootstrap-shop-item-gh-pages (1)\startbootstrap-shop-item-gh-pages\vendor/jquery/jquery.min.js"></script>
-    <script src="C:\Users\tsitsi\Desktop\Development\ParentalControl\ParentalControl\static\startbootstrap-shop-item-gh-pages (1)\startbootstrap-shop-item-gh-pages\vendorvendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static',filename ='startbootstrap-shop-item-gh-pages/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename ='startbootstrap-shop-item-gh-pages/vendorvendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
   </body>
 
