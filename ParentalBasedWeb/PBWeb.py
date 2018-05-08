@@ -20,18 +20,19 @@ class parents(db.Model):
     email = db.Column(db.String(20))
     password = db.Column(db.String(40))
     email_password = db.Column(db.String(30))
-    websites = db.Column(db.String(40))
-    words = db.Column(db.String(40))
+   # websites = db.Column(db.String(40))
+   #  words = db.Column(db.String(40))
 
 
 
-    def __int__(self, phone_no, name, email, password, websites, words):
+
+    def __init__(self, phone_no, name, email, password, websites, words):
         self.phone_no = phone_no
         self.name = name
         self.email = email
         self.password = password
-        self.websites = websites
-        self.words = words
+        #self.websites = websites
+        #self.words = words
 
 class RegisterForm(FlaskForm):
     name = StringField('Name', validators=[InputRequired(), Length(min=4, max=50)])
@@ -82,4 +83,4 @@ def signIn():
 
 if __name__ == '__main__':
 
-    app.run(debug=True)
+    app.run(debug=True) 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Child Guard - Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename = 'vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename = 'css/simple-sidebar.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Child Guard
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Child Details</a>
+                </li>
+                <li>
+                    <a href="#">Keywords</a>
+                </li>
+                <li>
+                    <a href="#">Blocked Websites</a>
+                </li>
+                <li>
+                    <a href="#">View Logs</a>
+                </li>
+                <li>
+                    <a href="#">Configure Settings</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h4>Family Options</h4>
+                <p>Get what you need to simplify your famil's digital life</p>
+              
+                <hr>
+                <h3>Help Protect your kids online</h3>
+                <p>Choose which websites your children can visit and block all the harmful and inappropriate content that are exposed to them</p>
+                
+                <hr>
+                <h3>Set Good Screen Time Habits</h3>
+                <p>Choose when and how much time your kids can use their devices.</p>
+               
+                <hr>
+                <h3>keep Track of your child's digital life</h3>
+                <p>Get daily logs of your child's activity during the day, both online and offline.</p>
+                
+                <hr>
+                <h3>Let your kids buy appropriate apps and games</h3>
+                <p>Configure settings to put restrictions on the games and applications that children may view or download.</p>
+                <hr>
+                <h3>Get alerts when your child is in danger</h3>
+                <p>Child Guard will send alerts to you when it suspects your child is in some kind of danger that requires immediate attention.</p>
+                <hr>
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Menu</a>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{url_for('static', filename = 'vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
